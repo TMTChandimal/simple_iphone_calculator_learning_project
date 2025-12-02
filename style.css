@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+
+
+#buttons {
+    margin: 20px 200px 200px 200px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    border-radius: 40%;
+}
+
+button {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    border-radius: 47%;
+    background-color: #363636;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    animation: none;
+    transition: transform 0.2s cubic-bezier(.24,1.46,.58,1.3);
+}
+
+button:active {
+    transform: scale(1.12);
+    background-color: #404040;
+}
+
+
+#display {
+    width: 300px;            /* fixed width like real iPhone */
+    height: 120px;
+    margin: 50px auto 10px;  /* center horizontally */
+    padding: 20px;
+
+    color: white;
+    font-size: 60px;
+
+    text-align: right;       /* <-- IMPORTANT: fill from right */
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: flex-end;   /* text sits at bottom nicely */
+    justify-content: flex-end; /* aligns text to right */
+}
+ 
+
+.first-row {
+    background-color: #5f5f5f;
+}
+
+.first-row:active {
+    background-color: #737373;
+}
+
+.yellow-colom {
+    background-color: #f99614;
+}
+
+.yellow-colom:active {
+    background-color: #ff9100;
+}
+

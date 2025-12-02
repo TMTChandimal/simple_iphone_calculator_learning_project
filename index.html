@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    
+
+    <audio id="clickSound" src="audiomass-output (1).mp3"></audio>
+
+    
+
+    <!-- Display Area -->
+    <div id="display">0</div>
+
+    <!-- Buttons Container -->
+    <div id="buttons">
+
+        <!-- Top row -->
+        <button id = "backspace" class = "first-row">x</button>
+        <button data-clear class = "first-row">AC</button>
+        <button id = "precent" class = "first-row">%</button>
+        <button data-operator="/" class = "yellow-colom">÷</button>
+
+        <!-- Number rows -->
+        <button data-value="7" >7</button>
+        <button data-value="8" >8</button>
+        <button data-value="9" >9</button>
+        <button data-operator="*" class = "yellow-colom">×</button>
+
+        <button data-value="4" >4</button>
+        <button data-value="5" >5</button>
+        <button data-value="6" >6</button>
+        <button data-operator="-" class = "yellow-colom">−</button>
+
+        <button data-value="1" >1</button>
+        <button data-value="2" >2</button>
+        <button data-value="3" >3</button>
+        <button data-operator="+" class = "yellow-colom">+</button>
+
+        <!-- Last row with wider 0 -->
+        <button id = "plus-minus">±</button>
+        <button data-value="0" >0</button>
+        <button data-value="." >.</button>
+        <button data-equals id="equals" class = "yellow-colom">=</button>
+
+    </div>
+
+    
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
